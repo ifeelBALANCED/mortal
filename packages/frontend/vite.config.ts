@@ -29,15 +29,6 @@ export default defineConfig(async () => {
         '@': resolve(packageRoot, './src')
       }
     },
-    build: {
-      outDir: 'build',
-      rollupOptions: {
-        input: {
-          main: 'src/app/index.tsx',
-          sw: 'sw.ts'
-        }
-      }
-    },
     define: {
       'import.meta.imageUrls': JSON.stringify(imageUrls)
     }
