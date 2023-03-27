@@ -29,6 +29,9 @@ export default defineConfig(async () => {
         '@': resolve(packageRoot, './src')
       }
     },
+    build: {
+      outDir: 'dist'
+    },
     define: {
       'import.meta.imageUrls': JSON.stringify(imageUrls)
     }
