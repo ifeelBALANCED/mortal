@@ -30,6 +30,7 @@ export default defineConfig(async () => {
       }
     },
     build: {
+      outDir: 'build',
       rollupOptions: {
         input: {
           main: 'src/app/index.tsx',
